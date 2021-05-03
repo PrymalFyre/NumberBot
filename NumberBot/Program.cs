@@ -47,13 +47,18 @@ namespace NumberBot
                     Console.WriteLine("Excellent and well done. You have guessed the correct number.");
                     break;
                 }
+                if (guess > 25 || guess < 1)
+                {
+                    Console.WriteLine("NumberBot would like to take this moment to remind you that the number you are guessing is between 1 and 25");
+                    tryTracker--;
+                }
                 if (guess > randomNumber)
                 {
-                    Console.WriteLine("Good guess, but too HIGH.");
+                    Console.WriteLine("It is a good guess, but too HIGH.");
                 }
                 if (guess < randomNumber)
                 {
-                    Console.WriteLine("Nice try, but too LOW.");
+                    Console.WriteLine("It is a good guess, but too LOW.");
                 }
                 if (tryTracker == maxTries)
                 {
@@ -62,8 +67,8 @@ namespace NumberBot
                     Console.WriteLine("Thank you for playing.");
                     break;
                 }
-                Console.WriteLine($"You only have {maxTries - tryTracker} left.");
-                Console.WriteLine("Try again. NumberBot still believes in you.");
+                Console.WriteLine($"You still have {maxTries - tryTracker} tries left.");
+                Console.WriteLine("Keep trying. NumberBot still believes in you.");
             }
 
 
