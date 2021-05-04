@@ -14,7 +14,7 @@ namespace NumberBot
             }
             catch(Exception)
             {
-                Console.WriteLine("It appears your guess is invalid.");
+                Console.WriteLine("Oh no. It appears your guess is out of bounds.");
                 Console.WriteLine("Please try another");
                 guess = GetGuess();
             }
