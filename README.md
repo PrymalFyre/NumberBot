@@ -2,4 +2,4 @@
 
 A simeple C# example of a random number generator.
 
-NumberBot loves guessing numbers.
+NumberBot loves when you guess numbers.
