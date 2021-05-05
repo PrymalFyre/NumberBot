@@ -29,6 +29,7 @@ namespace NumberBot
 
             //generate random number
             int randomNumber = new Random().Next(1, 25);
+
             Console.WriteLine("Guess a number between 1 and 25");
 
             //keep track of how many tries
